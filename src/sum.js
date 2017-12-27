@@ -1,3 +1,7 @@
 const sum = (a, b) => a + b;
 
-module.exports = sum;
+//CommonJS syntax
+// module.exports = sum;
+
+//ES2015 syntax
+export default sum;
