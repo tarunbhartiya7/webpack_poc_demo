@@ -13,8 +13,8 @@ const config = {
 				test: /\.js$/
 			},
 			{
-				use: ['style-loader', 'css-loader'],		//these loaders are applied from right to left
-				test: /\.css$/
+				use: ['style-loader', 'css-loader', 'sass-loader'],		//these loaders are applied from right to left
+				test: /\.scss$/
 			}
 		]
 	}
