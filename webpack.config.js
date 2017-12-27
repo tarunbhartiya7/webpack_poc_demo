@@ -16,9 +16,9 @@ const config = {
 			{
 				// use: ExtractTextPlugin.extract(['style-loader', 'css-loader', 'sass-loader']),		//these loaders are applied from right to left
 				loader: ExtractTextPlugin.extract({
-					loader: 'css-loader'
+					loader: ['css-loader', 'sass-loader']
 				}),
-				test: /\.css$/
+				test: /\.scss$/
 			}
 		]
 	},
