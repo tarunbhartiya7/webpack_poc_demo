@@ -1,6 +1,6 @@
 // const sum = require('./sum');
 
-import css from './app.scss';
+import css from './app.css';
 import sum from './sum';
 import mul from './mul';
 
