@@ -1,5 +1,5 @@
 // const sum = require('./sum');
-import './image_viewer';
+// import './image_viewer';
 import css from './app.scss';
 import sum from './sum';
 import mul from './mul';
@@ -12,13 +12,4 @@ console.log(`Total: ${total}`);
 console.log(`Multiplication: ${multiplication}`);
 
 //code splitting example - load the image_viewer file only after the button is clicked
-// const button = document.createElement('button');
-// button.innerText = 'Click me';
-// button.onclick = () => {
-//     //used to dynamically import files which returns a promise
-//     System.import('./image_viewer').then(module => {
-//         console.log(module);
-//     });
-// };
-
-// document.body.appendChild(button);
+import './codesplitting';
