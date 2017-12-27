@@ -6,4 +6,7 @@ import mul from './mul';
 
 const total = sum(10, 5);
 
-console.log(total);
+const multiplication = mul(4, 4);
+
+console.log(`Total: ${total}`);
+console.log(`Multiplication: ${multiplication}`);

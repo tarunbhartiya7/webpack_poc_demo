@@ -24,7 +24,8 @@ const config = {
 	},
 	plugins: [
 		new ExtractTextPlugin('style.css'),
-	]
+	],
+	watch: true
 };
 
 module.exports = config;	
