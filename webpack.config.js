@@ -10,6 +10,11 @@ const config = {
 		filename: 'bundle.js',	//you can name this anything
 		publicPath: 'dist/'
 	},
+	devServer: {
+		port: 4000,
+		stats: 'errors-only',
+		open: true
+	},
 	module: {
 		rules: [
 			{
@@ -32,7 +37,10 @@ const config = {
 			paths: glob.sync(path.join(__dirname, './*.html')),
 		})
 	],
-	watch: true
+	performance: {
+		hints: false		//turn off any performance hints
+	},
+	//watch: true		//not required when using dev server as it automatically runs in watch mode
 };
 
 module.exports = config;	
